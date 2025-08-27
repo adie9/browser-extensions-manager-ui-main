@@ -1,10 +1,18 @@
 @use '../../variables' as vars;
 
 .card {
+    
     width: 325px;
     background-color: vars.$neutral-0;
 }
 
 .card-desc {
-    
+    display: flex;
+    flex-direction: row;
+}
+
+.remove-toggle-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
 }

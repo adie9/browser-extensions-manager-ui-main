@@ -5,4 +5,15 @@
 .card {
   width: 325px;
   background-color: hsl(200, 60%, 99%);
+}
+
+.card-desc {
+  display: flex;
+  flex-direction: row;
+}
+
+.remove-toggle-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
 }/*# sourceMappingURL=card.css.map */
