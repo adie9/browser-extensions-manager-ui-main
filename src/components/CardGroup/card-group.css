@@ -1,0 +1,11 @@
+/* Neutral Colors */
+/* Red Colors */
+/* Gradients */
+/* Mixins */
+.card-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}/*# sourceMappingURL=card-group.css.map */

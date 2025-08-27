@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Button from "./components/Button/Button"
 import Header from "./components/Header/Header"
+import CardGroup from "./components/CardGroup/CardGroup"
 
 function App() {
 
@@ -16,6 +17,8 @@ function App() {
           <Button label="Inactive" />
         </div>
       </div>
+      
+      <CardGroup />
     </>
   )
 }
