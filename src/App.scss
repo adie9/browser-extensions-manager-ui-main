@@ -4,6 +4,11 @@ body {
   background: vars.$light-gradient;
 }
 
+.ext-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .btn-group {
   display: flex;
   justify-content: center;

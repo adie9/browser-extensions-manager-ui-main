@@ -7,8 +7,8 @@ function App() {
 
   return (
     <>
-      <div>
-        <Header />
+      <Header /> 
+      <div className='ext-list-container'>
         <h1>Extensions List</h1>
         <div className='btn-group'>
           <Button label="All" />

@@ -6,6 +6,11 @@ body {
   background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
 }
 
+.ext-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .btn-group {
   display: flex;
   justify-content: center;
