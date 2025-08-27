@@ -1,0 +1,8 @@
+
+@use '../../variables' as vars;
+
+/* Button Styles */
+.btn {
+    background-color: vars.$neutral-0;
+    padding: 0.3rem 0.6rem;
+}

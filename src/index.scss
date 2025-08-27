@@ -1,0 +1,11 @@
+@use './variables';
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+
+.rounded-4px {
+  border-radius: 20px;
+}
