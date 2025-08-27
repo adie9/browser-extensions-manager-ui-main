@@ -1,0 +1,14 @@
+@use '../../variables' as vars;
+
+.header-container {
+   @include vars.rounded(4px);
+    display: flex;
+   width: 80%;
+   margin: 0 auto;
+   padding: 0.3rem 0.6rem;
+   background-color: vars.$neutral-0;
+}
+
+.gradient-toggle {
+    margin-left: auto;
+}

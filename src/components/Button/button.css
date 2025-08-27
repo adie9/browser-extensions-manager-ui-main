@@ -1,8 +1,10 @@
 /* Neutral Colors */
 /* Red Colors */
 /* Gradients */
+/* Mixins */
 /* Button Styles */
 .btn {
+  border-radius: 20px;
   background-color: hsl(200, 60%, 99%);
   padding: 0.3rem 0.6rem;
 }/*# sourceMappingURL=button.css.map */

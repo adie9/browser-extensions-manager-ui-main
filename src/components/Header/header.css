@@ -1,0 +1,16 @@
+/* Neutral Colors */
+/* Red Colors */
+/* Gradients */
+/* Mixins */
+.header-container {
+  border-radius: 4px;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.3rem 0.6rem;
+  background-color: hsl(200, 60%, 99%);
+}
+
+.gradient-toggle {
+  margin-left: auto;
+}/*# sourceMappingURL=header.css.map */

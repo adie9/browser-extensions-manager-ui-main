@@ -1,3 +1,11 @@
+/* Neutral Colors */
+/* Red Colors */
+/* Gradients */
+/* Mixins */
+body {
+  background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+}
+
 .btn-group {
   display: flex;
   justify-content: center;
