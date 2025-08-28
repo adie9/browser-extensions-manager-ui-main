@@ -6,6 +6,11 @@ body {
   background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
 }
 
+.app-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .ext-list-container {
   display: flex;
   flex-direction: column;
@@ -26,6 +31,6 @@ h1 {
 @media (min-width: 1000px) {
   .ext-list-container {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=App.css.map */

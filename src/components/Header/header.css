@@ -5,9 +5,8 @@
 .header-container {
   border-radius: 4px;
   display: flex;
-  width: 80%;
+  width: 100%;
   margin: 1.5rem auto;
-  padding: 0.3rem 0.6rem;
   background-color: hsl(200, 60%, 99%);
 }
 

@@ -8,17 +8,19 @@ function App() {
 
   return (
     <>
-      <Header /> 
-      <div className='ext-list-container'>
-        <h1>Extensions List</h1>
-        <div className='btn-group'>
-          <Button label="All" />
-          <Button label="Active" />
-          <Button label="Inactive" />
+      <div className='app-container'>
+        <Header /> 
+        <div className='ext-list-container'>
+          <h1>Extensions List</h1>
+          <div className='btn-group'>
+            <Button label="All" />
+            <Button label="Active" />
+            <Button label="Inactive" />
+          </div>
         </div>
+          
+        <CardGroup />
       </div>
-      
-      <CardGroup />
     </>
   )
 }

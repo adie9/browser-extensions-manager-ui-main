@@ -7,5 +7,11 @@
   border-radius: 20px;
   background-color: hsl(200, 60%, 99%);
   padding: 0.3rem 0.6rem;
-  border-style: none;
+  border: 1px solid;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: hsl(3, 71%, 56%);
+  color: hsl(200, 60%, 99%);
+  border-color: hsl(3, 86%, 64%);
 }/*# sourceMappingURL=button.css.map */

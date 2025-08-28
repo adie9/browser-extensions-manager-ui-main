@@ -3,9 +3,9 @@
 .header-container {
    @include vars.rounded(4px);
     display: flex;
-   width: 80%;
+   width: 100%;
    margin: 1.5rem auto;
-   padding: 0.3rem 0.6rem;
+   
    background-color: vars.$neutral-0;
 }
 

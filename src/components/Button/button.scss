@@ -6,5 +6,12 @@
     @include vars.rounded(20px);
     background-color: vars.$neutral-0;
     padding: 0.3rem 0.6rem;
-    border-style: none;
+    border: 1px solid;
+    cursor: pointer;
+
+    &:hover {
+        background-color: vars.$red-500;
+        color: vars.$neutral-0;
+        border-color: vars.$red-400;
+    }
 }
