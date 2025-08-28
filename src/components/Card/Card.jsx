@@ -8,7 +8,7 @@ export default function Card({name, description, logo}) {
                 <div class="card-desc">
                     <img className='logo' src={logo} alt={`${name} logo`}></img>
                     <div>
-                        <h1>{name}</h1>
+                        <h2>{name}</h2>
                         <p>{description}</p>
                     </div>
                 </div>
