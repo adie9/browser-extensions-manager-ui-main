@@ -5,6 +5,7 @@ import Header from "./components/Header/Header"
 import CardGroup from "./components/CardGroup/CardGroup"
 
 function App() {
+  const [filter, setFilter] = useState("All");
 
   return (
     <>
@@ -13,13 +14,13 @@ function App() {
         <div className='ext-list-container'>
           <h1>Extensions List</h1>
           <div className='btn-group'>
-            <Button label="All" />
-            <Button label="Active" />
-            <Button label="Inactive" />
+            <Button label="All" active={filter === "All"} onClick={() => setFilter("All")} />
+            <Button label="Active" active={filter === "Active"} onClick={() => setFilter("Active")} />
+            <Button label="Inactive" active={filter === "Inactive"} onClick={() => setFilter("Inactive")} />
           </div>
         </div>
           
-        <CardGroup />
+        <CardGroup filter={filter} />
       </div>
     </>
   )

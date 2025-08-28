@@ -1,7 +1,10 @@
 import './card.css'
 import Button from "../Button/Button"
+import { useState } from 'react'
 
-export default function Card({name, description, logo}) {
+export default function Card({name, description, logo, isActive}) {
+    const [active, setActive] = useState(isActive); 
+
     return (
         <>
             <section class="card">

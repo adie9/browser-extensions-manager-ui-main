@@ -7,7 +7,7 @@ export default function CardGroup() {
         <>
             <section className="card-group">
                 {data.map(data => (
-                    <Card name={data.name} description={data.description} logo={data.logo} />
+                    <Card name={data.name} description={data.description} logo={data.logo} isActive={data.isActive} />
                 ))}
             </section>
         </>
