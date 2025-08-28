@@ -4,11 +4,14 @@
    @include vars.rounded(4px);
     display: flex;
    width: 80%;
-   margin: 0 auto;
+   margin: 1.5rem auto;
    padding: 0.3rem 0.6rem;
    background-color: vars.$neutral-0;
 }
 
 .gradient-toggle {
+    @include vars.rounded(4px);
     margin-left: auto;
+    background-color: vars.$neutral-300;
+    padding: 0.5rem;
 }

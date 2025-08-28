@@ -3,13 +3,22 @@
 /* Gradients */
 /* Mixins */
 .card {
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
   width: 325px;
   background-color: hsl(200, 60%, 99%);
+  gap: 1rem;
 }
 
 .card-desc {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+}
+
+.logo {
+  align-self: flex-start;
 }
 
 .remove-toggle-container {

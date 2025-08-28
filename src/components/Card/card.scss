@@ -1,14 +1,22 @@
 @use '../../variables' as vars;
 
 .card {
-    
+    @include vars.rounded(4px);
+    display: flex;
+    flex-direction: column;
     width: 325px;
     background-color: vars.$neutral-0;
+    gap: 1rem;
 }
 
 .card-desc {
     display: flex;
     flex-direction: row;
+    gap: 1rem;
+}
+
+.logo {
+    align-self: flex-start;
 }
 
 .remove-toggle-container {

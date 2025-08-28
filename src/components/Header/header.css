@@ -6,11 +6,14 @@
   border-radius: 4px;
   display: flex;
   width: 80%;
-  margin: 0 auto;
+  margin: 1.5rem auto;
   padding: 0.3rem 0.6rem;
   background-color: hsl(200, 60%, 99%);
 }
 
 .gradient-toggle {
+  border-radius: 4px;
   margin-left: auto;
+  background-color: hsl(0, 0%, 78%);
+  padding: 0.5rem;
 }/*# sourceMappingURL=header.css.map */

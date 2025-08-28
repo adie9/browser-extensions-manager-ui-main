@@ -6,7 +6,7 @@ export default function Card({name, description, logo}) {
         <>
             <section class="card">
                 <div class="card-desc">
-                    <img src={logo} alt={`${name} logo`}></img>
+                    <img className='logo' src={logo} alt={`${name} logo`}></img>
                     <div>
                         <h1>{name}</h1>
                         <p>{description}</p>
