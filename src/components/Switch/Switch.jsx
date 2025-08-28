@@ -1,20 +1,17 @@
 
-import { useState } from 'react';
 
-export default function Switch() {
-    const [isChecked, setIsChecked] = useState(false);
+export default function Switch({active, setActive}) {
+function toggleActive() {
+    setActive(!active);
+}
 
-    const toggleSwitch = () => {
-    setIsChecked(!isChecked);
-    };
-    
     return (
         <>
             <label className='switch'>
                 <input
                     type="checkbox"
-                    checked={isChecked}
-                    onChange={toggleSwitch}
+                    checked={active}
+                    onChange={toggleActive}
                 />
             </label>
         </>

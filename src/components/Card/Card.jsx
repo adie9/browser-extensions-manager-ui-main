@@ -8,8 +8,8 @@ export default function Card({name, description, logo, isActive}) {
 
     return (
         <>
-            <section class="card">
-                <div class="card-desc">
+            <section className='card'>
+                <div className='card-desc'>
                     <img className='logo' src={logo} alt={`${name} logo`}></img>
                     <div>
                         <h2>{name}</h2>
@@ -19,7 +19,7 @@ export default function Card({name, description, logo, isActive}) {
 
                 <div className='remove-toggle-container'>
                     <Button label="Remove" />
-                    <Switch />
+                    <Switch active={active} setActive={setActive} />
                 </div>
             </section>
         </>
