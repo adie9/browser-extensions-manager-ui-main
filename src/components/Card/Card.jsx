@@ -4,11 +4,6 @@ import Switch from "../Switch/Switch"
 
 export default function Card({ key, name, description, logo, isActive, onToggle, onRemove }) {
 
-  // Function that removes card
-  function Remove() {
-
-  }
-
   return (
     <section id={key} className='card'>
       <div className='card-desc'>
