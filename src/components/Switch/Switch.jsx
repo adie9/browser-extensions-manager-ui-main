@@ -1,3 +1,5 @@
+import './switch.css'
+
 export default function Switch({active, setActive}) {
     function toggleActive() {
         setActive(!active);
@@ -11,6 +13,7 @@ export default function Switch({active, setActive}) {
                     checked={active}
                     onChange={toggleActive}
                 />
+                <span className="slider" />
             </label>
         </>
     )
