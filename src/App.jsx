@@ -16,6 +16,11 @@ function App() {
     card.id === id ? { ...card, isActive: !card.isActive } : card));
   }
 
+  // Remove card by ID
+  function removeCard(id) {
+    setCards((prev) => prev.filter((card) => card.id != id));
+  }
+
   return (
     <>
       <div className='app-container'>
@@ -29,7 +34,7 @@ function App() {
           </div>
         </div>
           
-        <CardGroup cards={cards} filter={filter} toggleCardActive={toggleCardActive} />
+        <CardGroup cards={cards} filter={filter} toggleCardActive={toggleCardActive} removeCard={removeCard} />
       </div>
     </>
   )

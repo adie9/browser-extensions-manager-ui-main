@@ -1,7 +1,7 @@
 import './card-group.css'
 import Card from "../Card/Card"
 
-export default function CardGroup({ cards, filter, toggleCardActive }) {
+export default function CardGroup({ cards, filter, toggleCardActive, removeCard }) {
   const filteredCards = cards.filter((item) => {
     if (filter === "All") return true;
     if (filter === "Active") return item.isActive === true || item.isActive === "true";
@@ -16,6 +16,7 @@ export default function CardGroup({ cards, filter, toggleCardActive }) {
           key={item.id}
           {...item}
           onToggle={() => toggleCardActive(item.id)} 
+          onRemove={() => removeCard(item.id)}
         />
       ))}
     </section>

@@ -1,5 +1,3 @@
-
-
 export default function Switch({active, setActive}) {
     function toggleActive() {
         setActive(!active);

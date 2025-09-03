@@ -1,11 +1,16 @@
 import './card.css'
 import Button from "../Button/Button"
 import Switch from "../Switch/Switch"
-import { useState } from 'react'
 
-export default function Card({ name, description, logo, isActive, onToggle }) {
+export default function Card({ key, name, description, logo, isActive, onToggle, onRemove }) {
+
+  // Function that removes card
+  function Remove() {
+
+  }
+
   return (
-    <section className='card'>
+    <section id={key} className='card'>
       <div className='card-desc'>
         <img className='logo' src={logo} alt={`${name} logo`} />
         <div>
@@ -15,7 +20,7 @@ export default function Card({ name, description, logo, isActive, onToggle }) {
       </div>
 
       <div className='remove-toggle-container'>
-        <Button label="Remove" />
+        <Button label="Remove" onClick={onRemove} />
         <Switch active={isActive} setActive={onToggle} />
       </div>
     </section>
