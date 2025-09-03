@@ -3,9 +3,18 @@ import './App.css'
 import Button from "./components/Button/Button"
 import Header from "./components/Header/Header"
 import CardGroup from "./components/CardGroup/CardGroup"
+import data from "./data/data.json";
 
 function App() {
   const [filter, setFilter] = useState("All");
+  const [cards, setCards] = useState(data);
+
+  // Toggle isActive state of a card
+  function toggleCardActive(id) {
+    setCards((prev) => 
+    prev.map((card) => 
+    card.id === id ? { ...card, isActive: !card.isActive } : card));
+  }
 
   return (
     <>
@@ -20,7 +29,7 @@ function App() {
           </div>
         </div>
           
-        <CardGroup filter={filter} />
+        <CardGroup cards={cards} filter={filter} toggleCardActive={toggleCardActive} />
       </div>
     </>
   )
