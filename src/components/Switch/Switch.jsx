@@ -1,9 +1,9 @@
 
 
 export default function Switch({active, setActive}) {
-function toggleActive() {
-    setActive(!active);
-}
+    function toggleActive() {
+        setActive(!active);
+    }
 
     return (
         <>

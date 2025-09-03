@@ -14,4 +14,11 @@
         color: vars.$neutral-0;
         border-color: vars.$red-400;
     }
+
+    &.btn-active {
+        background-color: vars.$red-500;
+        color: vars.$neutral-0;
+        border-color: vars.$red-400;
+    }
 }
+

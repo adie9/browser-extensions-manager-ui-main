@@ -14,9 +14,9 @@ function App() {
         <div className='ext-list-container'>
           <h1>Extensions List</h1>
           <div className='btn-group'>
-            <Button label="All" active={filter === "All"} onClick={() => setFilter("All")} />
-            <Button label="Active" active={filter === "Active"} onClick={() => setFilter("Active")} />
-            <Button label="Inactive" active={filter === "Inactive"} onClick={() => setFilter("Inactive")} />
+            <Button id="All" label="All" active={filter === "All"} onClick={(id) => setFilter(id)} />
+            <Button id="Active" label="Active" active={filter === "Active"} onClick={(id) => setFilter(id)} />
+            <Button id="Inactive" label="Inactive" active={filter === "Inactive"} onClick={(id) => setFilter(id)} />
           </div>
         </div>
           
