@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import Button from "./components/Button/Button"
 import Header from "./components/Header/Header"
@@ -8,6 +8,16 @@ import data from "./data/data.json";
 function App() {
   const [filter, setFilter] = useState("All");
   const [cards, setCards] = useState(data);
+  const [theme, setTheme] = useState("light");
+
+  // UseEffect
+  useEffect(() => {
+  const root = document.getElementById('root');
+  if (root) {
+    root.classList.remove('light-gradient', 'dark-gradient');
+    root.classList.add(`${theme}-gradient`);
+  }
+  }, [theme]);
 
   // Toggle isActive state of a card
   function toggleCardActive(id) {
@@ -21,10 +31,15 @@ function App() {
     setCards((prev) => prev.filter((card) => card.id != id));
   }
 
+  // Handle theme change
+  function handleThemeChange() {
+    setTheme(prev => (prev === 'light' ? 'dark' : 'light'))
+  }
+
   return (
     <>
       <div className='app-container'>
-        <Header /> 
+        <Header handleThemeChange={handleThemeChange} /> 
         <div className='ext-list-container'>
           <h1>Extensions List</h1>
           <div className='btn-group'>

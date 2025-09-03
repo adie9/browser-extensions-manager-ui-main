@@ -5,7 +5,6 @@
     display: flex;
    width: 100%;
    margin: 1.5rem auto;
-   
    background-color: vars.$neutral-0;
 }
 
@@ -14,4 +13,5 @@
     margin-left: auto;
     background-color: vars.$neutral-300;
     padding: 0.5rem;
+    cursor: pointer;
 }

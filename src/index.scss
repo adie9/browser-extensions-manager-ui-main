@@ -1,4 +1,4 @@
-@use './variables';
+@use './variables' as vars;
 * {
   padding: 0;
   margin: 0;
@@ -11,4 +11,12 @@
 
 .shadow {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#root.light-gradient {
+  background: vars.$light-gradient;
+}
+
+#root.dark-gradient {
+  background: vars.$dark-gradient;
 }

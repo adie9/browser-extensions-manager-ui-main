@@ -14,4 +14,12 @@
 
 .shadow {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#root.light-gradient {
+  background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+}
+
+#root.dark-gradient {
+  background: linear-gradient(180deg, #040918 0%, #091540 100%);
 }/*# sourceMappingURL=index.css.map */
