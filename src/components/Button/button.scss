@@ -9,10 +9,14 @@
     border: 1px solid;
     cursor: pointer;
 
-    &:hover, &.btn-active {
+    &.btn-active {
         background-color: vars.$red-500;
         color: vars.$neutral-0;
         border-color: vars.$red-400;
+    }
+
+    &:hover {
+        background-color: vars.$neutral-300;
     }
 
     

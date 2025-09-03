@@ -5,7 +5,7 @@ import Switch from "../Switch/Switch"
 export default function Card({ key, name, description, logo, isActive, onToggle, onRemove }) {
 
   return (
-    <section id={key} className='card'>
+    <section id={key} className='card shadow'>
       <div className='card-desc'>
         <img className='logo' src={logo} alt={`${name} logo`} />
         <div>
