@@ -39,7 +39,7 @@ function App() {
   return (
     <>
       <div className={`app-container ${theme}`}>
-        <Header handleThemeChange={handleThemeChange} /> 
+        <Header theme={theme} handleThemeChange={handleThemeChange} /> 
         <div className='ext-list-container'>
           <h1>Extensions List</h1>
           <div className='btn-group'>

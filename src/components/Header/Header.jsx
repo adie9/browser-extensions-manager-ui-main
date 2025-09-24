@@ -1,10 +1,13 @@
 import './header.css';
-export default function Header({handleThemeChange}) {
+export default function Header({theme, handleThemeChange}) {
+    // Conditionally select toggle icon
+    const toggleIconSrc = theme === "light" ? 'src/assets/images/icon-moon.svg' : 'src/assets/images/icon-sun.svg';
+    
     return (
         <>
             <div className="header-container shadow">
                 <img className='logo' src='src\assets\images\logo.svg' alt='logo'></img>
-                <a className='gradient-toggle' onClick={handleThemeChange}><img src='src\assets\images\icon-moon.svg' alt='moon'></img></a>
+                <a className='gradient-toggle' onClick={handleThemeChange}><img src={toggleIconSrc} alt={theme === "light" ? "moon" : "sun"}></img></a>
             </div>
         </>
     )
