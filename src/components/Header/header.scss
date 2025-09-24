@@ -8,6 +8,11 @@
 
     .gradient-toggle {
         background-color: vars.$neutral-700;
+
+        &:hover {
+        background-color: vars.$neutral-300;
+        border-color: vars.$neutral-300;
+    }
     }
 
     .logo {
@@ -20,6 +25,7 @@
     display: flex;
    width: 100%;
    margin-bottom: 1.5rem;
+   padding: 0.6rem;
    background-color: vars.$neutral-0;
 }
 
@@ -29,6 +35,11 @@
     background-color: vars.$neutral-300;
     padding: 0.5rem;
     cursor: pointer;
+
+    &:hover {
+            border-color: vars.$neutral-800;
+            background-color: vars.$neutral-600;
+        }
 }
 
 .logo {

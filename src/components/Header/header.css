@@ -8,6 +8,10 @@
 .app-container.dark .gradient-toggle {
   background-color: hsl(225, 23%, 24%);
 }
+.app-container.dark .gradient-toggle:hover {
+  background-color: hsl(0, 0%, 78%);
+  border-color: hsl(0, 0%, 78%);
+}
 .app-container.dark .logo {
   color: hsl(200, 60%, 99%);
 }
@@ -17,6 +21,7 @@
   display: flex;
   width: 100%;
   margin-bottom: 1.5rem;
+  padding: 0.6rem;
   background-color: hsl(200, 60%, 99%);
 }
 
@@ -26,6 +31,10 @@
   background-color: hsl(0, 0%, 78%);
   padding: 0.5rem;
   cursor: pointer;
+}
+.gradient-toggle:hover {
+  border-color: hsl(226, 25%, 17%);
+  background-color: hsl(226, 11%, 37%);
 }
 
 .logo {

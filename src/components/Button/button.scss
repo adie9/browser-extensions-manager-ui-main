@@ -14,6 +14,10 @@
             border-color: vars.$neutral-800;
             background-color: vars.$neutral-600;
         }
+
+        &:focus {
+        border-color: vars.$red-700;
+    }
     }
     
 }
@@ -23,18 +27,22 @@
     @include vars.rounded(20px);
     background-color: vars.$neutral-0;
     padding: 0.3rem 0.6rem;
-    border: 1px solid;
+    border: none;
     cursor: pointer;
 
     &.btn-active {
         background-color: vars.$red-500;
         color: vars.$neutral-0;
-        border-color: vars.$red-400;
+        border-color: vars.$red-500;
     }
 
     &:hover {
         background-color: vars.$neutral-300;
         border-color: vars.$neutral-300;
+    }
+
+    &:focus {
+        border: 1px solid vars.$red-700;
     }
 
     

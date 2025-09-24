@@ -8,6 +8,9 @@
   width: 50px;
   height: 26px;
 }
+.switch:focus {
+  border: 1px solid hsl(3, 77%, 44%);
+}
 .switch input {
   opacity: 0;
   width: 0;
