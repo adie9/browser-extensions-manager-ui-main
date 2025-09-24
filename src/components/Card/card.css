@@ -6,7 +6,7 @@
   background-color: hsl(226, 25%, 17%);
   color: hsl(0, 0%, 93%);
 }
-.app-container.dark .card-btn:hover {
+.app-container.dark .card .card-btn:hover {
   background-color: hsl(3, 86%, 64%);
 }
 
@@ -18,6 +18,9 @@
   background-color: hsl(200, 60%, 99%);
   gap: 1rem;
   padding: 1rem;
+}
+.card .card-btn:hover {
+  background-color: hsl(3, 86%, 64%);
 }
 
 .card-desc {

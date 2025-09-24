@@ -5,15 +5,16 @@
     .card {
         background-color: vars.$neutral-800;
         color: vars.$neutral-100;
-    }
 
-    .card-btn {
-        &:hover {
-            background-color: vars.$red-400;
+        .card-btn {
+            &:hover {
+                background-color: vars.$red-400;
+            }
         }
     }
-
 }
+
+    
 
 .card {
     @include vars.rounded(20px);
@@ -23,6 +24,12 @@
     background-color: vars.$neutral-0;
     gap: 1rem;
     padding: 1rem;
+
+    .card-btn {
+            &:hover {
+                background-color: vars.$red-400;
+            }
+        }
 }
 
 .card-desc {
