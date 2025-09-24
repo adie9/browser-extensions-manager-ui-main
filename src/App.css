@@ -9,6 +9,7 @@ body {
 .app-container {
   width: 80%;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 .ext-list-container {

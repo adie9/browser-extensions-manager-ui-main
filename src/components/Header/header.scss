@@ -1,8 +1,17 @@
 @use '../../variables' as vars;
 
+
 .app-container.dark {
     .header-container {
         background-color: vars.$neutral-800;
+    }
+
+    .gradient-toggle {
+        background-color: vars.$neutral-700;
+    }
+
+    .logo {
+        color: vars.$neutral-0;
     }
 }
 
@@ -10,7 +19,7 @@
    @include vars.rounded(4px);
     display: flex;
    width: 100%;
-   margin: 1.5rem auto;
+   margin-bottom: 1.5rem;
    background-color: vars.$neutral-0;
 }
 
@@ -20,4 +29,8 @@
     background-color: vars.$neutral-300;
     padding: 0.5rem;
     cursor: pointer;
+}
+
+.logo {
+    color: #091540;
 }

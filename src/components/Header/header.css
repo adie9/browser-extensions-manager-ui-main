@@ -5,12 +5,18 @@
 .app-container.dark .header-container {
   background-color: hsl(226, 25%, 17%);
 }
+.app-container.dark .gradient-toggle {
+  background-color: hsl(225, 23%, 24%);
+}
+.app-container.dark .logo {
+  color: hsl(200, 60%, 99%);
+}
 
 .header-container {
   border-radius: 4px;
   display: flex;
   width: 100%;
-  margin: 1.5rem auto;
+  margin-bottom: 1.5rem;
   background-color: hsl(200, 60%, 99%);
 }
 
@@ -20,4 +26,8 @@
   background-color: hsl(0, 0%, 78%);
   padding: 0.5rem;
   cursor: pointer;
+}
+
+.logo {
+  color: #091540;
 }/*# sourceMappingURL=header.css.map */
