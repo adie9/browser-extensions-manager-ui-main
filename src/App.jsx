@@ -50,7 +50,14 @@ function App() {
         </div>
           
         <CardGroup cards={cards} filter={filter} toggleCardActive={toggleCardActive} removeCard={removeCard} />
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp">Frontend Mentor</a>. 
+          Coded by <a href="https://www.frontendmentor.io/profile/adie9">Adrian Guerra</a>.
+        </div>
       </div>
+
+      
+
     </>
   )
 }

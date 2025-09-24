@@ -23,6 +23,9 @@ body {
 .app-container.dark .ext-list-container {
   color: hsl(200, 60%, 99%);
 }
+.app-container.dark .attribution {
+  color: hsl(200, 60%, 99%);
+}
 
 .btn-group {
   display: flex;
@@ -32,6 +35,15 @@ body {
 
 h1 {
   text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media (min-width: 1000px) {
