@@ -2,6 +2,7 @@
 /* Red Colors */
 /* Gradients */
 /* Mixins */
+/* Dark Mode */
 .app-container.dark .btn {
   background-color: hsl(226, 25%, 17%);
   color: hsl(0, 0%, 93%);

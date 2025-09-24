@@ -1,6 +1,7 @@
 
 @use '../../variables' as vars;
 
+/* Dark Mode */
 .app-container.dark {
     .btn {
         background-color: vars.$neutral-800;
