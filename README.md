@@ -12,11 +12,7 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -39,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/browser-extensions-manger-ui-using-react-and-sass-dKBNNxEphR](https://www.frontendmentor.io/solutions/browser-extensions-manger-ui-using-react-and-sass-dKBNNxEphR)
 - Live Site URL: [https://browser-extensions-manager-ui-main-gules.vercel.app/](https://browser-extensions-manager-ui-main-gules.vercel.app/)
 
 ## My process
@@ -56,18 +52,41 @@ Users should be able to:
 
 ### What I learned
 
+```js
 
+function toggleCardActive(id) {
+    setCards((prev) => 
+    prev.map((card) => 
+    card.id === id ? { ...card, isActive: !card.isActive } : card));
+  }
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+  // Remove card by ID
+  function removeCard(id) {
+    setCards((prev) => prev.filter((card) => card.id != id));
+  }
+
+  // Handle theme change
+  function handleThemeChange() {
+    setTheme(prev => (prev === 'light' ? 'dark' : 'light'))
+  }
+
+```
+One of the things I had the most trouble with was the card active states and theme changes. I needed a bit of help, but I feel like I got a better understanding of 'prev'.
+
+```jsx
+
+<button
+  onClick={() => onClick(id)}
+  className={`btn shadow ${active ? "btn-active" : ""} ${className}`}>
+    {label}
+</button>
+
+```
+
+While this isn't something new to me, I also had fun with conditional rendering, and using conditionals in general. I learned how to conditionally add classes based on a button's active state.
+
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Going forward, I want to write cleaner code. I plan on taking a shot at creating a full stack app, as I think it would be good to have that sort of experience under my belt. I also plan on using Tailwind CSS in future projects.
 
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
