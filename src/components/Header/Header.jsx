@@ -1,8 +1,8 @@
 import './header.css';
-import Logo from '/src/assets/images/logo.svg?react';
+import Logo from '/public/images/logo.svg?react';
 export default function Header({theme, handleThemeChange}) {
     // Conditionally select toggle icon
-    const toggleIconSrc = theme === "light" ? 'src/assets/images/icon-moon.svg' : 'src/assets/images/icon-sun.svg';
+    const toggleIconSrc = theme === "light" ? '/public/images/icon-moon.svg' : '/public/images/icon-sun.svg';
     
     return (
         <>
