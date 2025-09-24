@@ -2,6 +2,13 @@
 /* Red Colors */
 /* Gradients */
 /* Mixins */
+.app-container.dark input:checked + .slider:hover {
+  background-color: hsl(3, 77%, 44%);
+}
+.app-container.dark .slider:hover {
+  background-color: hsl(226, 11%, 37%);
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -40,6 +47,9 @@
 }
 .switch input:checked + .slider {
   background-color: hsl(3, 71%, 56%);
+}
+.switch input:checked + .slider:hover {
+  background-color: hsl(3, 77%, 44%);
 }
 .switch input:checked + .slider::before {
   transform: translateX(24px);

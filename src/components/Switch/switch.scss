@@ -1,5 +1,19 @@
 @use '../../variables' as vars;
 
+.app-container.dark {
+  input:checked + .slider {
+    &:hover {
+      background-color: vars.$red-700;
+    }
+  }
+  
+  .slider {
+    &:hover {
+      background-color: vars.$neutral-600;
+    }
+  }
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -38,10 +52,16 @@
       transition: 0.4s;
       border-radius: 50%;
     }
+
+    
   }
 
   input:checked + .slider {
     background-color: vars.$red-500; // red for active
+
+    &:hover {
+      background-color: vars.$red-700;
+    }
   }
 
   input:checked + .slider::before {
