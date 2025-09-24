@@ -38,14 +38,14 @@ function App() {
 
   return (
     <>
-      <div className='app-container'>
+      <div className={`app-container ${theme}`}>
         <Header handleThemeChange={handleThemeChange} /> 
         <div className='ext-list-container'>
           <h1>Extensions List</h1>
           <div className='btn-group'>
-            <Button id="All" label="All" active={filter === "All"} onClick={(id) => setFilter(id)} />
-            <Button id="Active" label="Active" active={filter === "Active"} onClick={(id) => setFilter(id)} />
-            <Button id="Inactive" label="Inactive" active={filter === "Inactive"} onClick={(id) => setFilter(id)} />
+            <Button className="main-btn" id="All" label="All" active={filter === "All"} onClick={(id) => setFilter(id)} />
+            <Button className="main-btn" id="Active" label="Active" active={filter === "Active"} onClick={(id) => setFilter(id)} />
+            <Button className="main-btn" id="Inactive" label="Inactive" active={filter === "Inactive"} onClick={(id) => setFilter(id)} />
           </div>
         </div>
           

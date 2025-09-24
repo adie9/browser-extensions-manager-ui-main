@@ -1,6 +1,23 @@
 
 @use '../../variables' as vars;
 
+.app-container.dark {
+    .btn {
+        background-color: vars.$neutral-800;
+        color: vars.$neutral-100;
+
+        &.btn-active {
+            background-color: vars.$red-400;
+        }
+
+        &:hover {
+            border-color: vars.$neutral-800;
+            background-color: vars.$neutral-600;
+        }
+    }
+    
+}
+
 /* Button Styles */
 .btn {
     @include vars.rounded(20px);

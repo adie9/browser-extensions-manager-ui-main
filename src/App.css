@@ -18,6 +18,10 @@ body {
   margin-bottom: 3rem;
 }
 
+.app-container.dark .ext-list-container {
+  color: hsl(200, 60%, 99%);
+}
+
 .btn-group {
   display: flex;
   justify-content: center;

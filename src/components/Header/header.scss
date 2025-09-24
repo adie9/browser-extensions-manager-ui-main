@@ -1,5 +1,11 @@
 @use '../../variables' as vars;
 
+.app-container.dark {
+    .header-container {
+        background-color: vars.$neutral-800;
+    }
+}
+
 .header-container {
    @include vars.rounded(4px);
     display: flex;

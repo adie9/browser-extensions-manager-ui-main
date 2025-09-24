@@ -2,6 +2,14 @@
 /* Red Colors */
 /* Gradients */
 /* Mixins */
+.app-container.dark .card {
+  background-color: hsl(226, 25%, 17%);
+  color: hsl(0, 0%, 93%);
+}
+.app-container.dark .card-btn:hover {
+  background-color: hsl(3, 86%, 64%);
+}
+
 .card {
   border-radius: 20px;
   display: flex;

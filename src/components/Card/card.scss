@@ -1,5 +1,20 @@
 @use '../../variables' as vars;
 
+
+.app-container.dark {
+    .card {
+        background-color: vars.$neutral-800;
+        color: vars.$neutral-100;
+    }
+
+    .card-btn {
+        &:hover {
+            background-color: vars.$red-400;
+        }
+    }
+
+}
+
 .card {
     @include vars.rounded(20px);
     display: flex;

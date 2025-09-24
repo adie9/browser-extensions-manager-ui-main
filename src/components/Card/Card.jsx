@@ -15,7 +15,7 @@ export default function Card({ key, name, description, logo, isActive, onToggle,
       </div>
 
       <div className='remove-toggle-container'>
-        <Button label="Remove" onClick={onRemove} />
+        <Button className="card-btn" label="Remove" onClick={onRemove} />
         <Switch active={isActive} setActive={onToggle} />
       </div>
     </section>

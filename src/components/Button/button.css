@@ -2,6 +2,18 @@
 /* Red Colors */
 /* Gradients */
 /* Mixins */
+.app-container.dark .btn {
+  background-color: hsl(226, 25%, 17%);
+  color: hsl(0, 0%, 93%);
+}
+.app-container.dark .btn.btn-active {
+  background-color: hsl(3, 86%, 64%);
+}
+.app-container.dark .btn:hover {
+  border-color: hsl(226, 25%, 17%);
+  background-color: hsl(226, 11%, 37%);
+}
+
 /* Button Styles */
 .btn {
   border-radius: 20px;
