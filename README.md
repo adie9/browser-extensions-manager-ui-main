@@ -88,5 +88,5 @@ While this isn't something new to me, I also had fun with conditional rendering,
 
 ### Continued development
 
-Going forward, I want to write cleaner code. I plan on taking a shot at creating a full stack app, as I think it would be good to have that sort of experience under my belt. I also plan on using Tailwind CSS in future projects.
+Going forward, I want to write cleaner code. I also plan on using Tailwind CSS in future projects, as well as learning how to use APIs and databases.
 
